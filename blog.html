@@ -54,7 +54,6 @@
         }
         .bio{
             position: relative;
-            border-bottom: 1px solid;
         }
 
         .bio-text{
@@ -63,7 +62,7 @@
             left: 20%;
             top: 25%;
             right: 0;
-            box-shadow: green 4px 6px 6px 3px ;
+            box-shadow: gray 4px 6px 6px 3px ;
             
         }
         @media screen and (max-width: 1050px){
@@ -76,7 +75,37 @@
             clear: both;
             height: 40px;
         } 
-        
+        h3{text-align: center;color: rgb(99, 153, 156);}
+        h3+p{
+            text-align: center;
+            width: 60%;
+            margin:20px auto;
+
+        }
+        article{
+        font-family:'Times New Roman', Times, serif;
+        line-height: 20px;
+    }
+    .title{
+        font-size: 1.5em;
+        font-weight: bold;
+        text-transform: capitalize;
+        color: rgb(79, 110, 114);
+    }
+    .date{
+        font-style: italic;
+        font-size: 1.1em;
+        text-transform: uppercase;
+    }
+    section{
+        margin: 20px auto;
+        width: 60%;
+        box-shadow: gray 10px 10px 4px ;
+    }
+    .breakpoint{
+        margin-top: 10px;
+        border-bottom: 1px solid gray ;
+    }
     </style>
 </head>
 <body>
@@ -98,7 +127,7 @@
    
         <div class="bio-text">
                 <h1>Dawit Teklu</h1>
-                <h3>Student, Addis Ababa institue of Technology</h3>
+                <h4>Student, Addis Ababa institue of Technology</h4>
                 <p>Hi there</p>
                 <p>
                     I am  Dawit , I am student at
@@ -112,59 +141,102 @@
 
     </div>
 <!-- bio end -->
+    <div class="breakpoint">
 
-    <div id="content">
-        <section>
-        <p class="title">
-            My first time
-        </p>
-        <article>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ratione ab eaque commodi porro ad optio, quaerat ex sapiente nesciunt sed, ullam, harum laudantium et?
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ratione ab eaque commodi porro ad optio, quaerat ex sapiente nesciunt sed, ullam, harum laudantium et?
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ratione ab eaque commodi porro ad optio, quaerat ex sapiente nesciunt sed, ullam, harum laudantium et?
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ratione ab eaque commodi porro ad optio, quaerat ex sapiente nesciunt sed, ullam, harum laudantium et?
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ratione ab eaque commodi porro ad optio, quaerat ex sapiente nesciunt sed, ullam, harum laudantium et?
-        </article>
-        <p class="date">
-            march 19 2020, 3:00 am
-        </p>
-        </section>
     </div>
-
+<!-- blog started -->
+    <h3>Ethiopian tourist destinations</h3>
+    <p>Culturally speaking, In Ethiopia there are seven UNESCO World Heritage sites here as well as the chance to look into 
+        a more recent and turbulent <past class="br"></past>
+      the following are the best places to be visited in our country.</p>
     <div id="content">
         <section>
         <p class="title">
-            My second post
+            Danakil Depression
         </p>
         <article>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ratione ab eaque commodi porro ad optio, quaerat ex sapiente nesciunt sed, ullam, harum laudantium et?
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ratione ab eaque commodi porro ad optio, quaerat ex sapiente nesciunt sed, ullam, harum laudantium et?
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ratione ab eaque commodi porro ad optio, quaerat ex sapiente nesciunt sed, ullam, harum laudantium et?
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ratione ab eaque commodi porro ad optio, quaerat ex sapiente nesciunt sed, ullam, harum laudantium et?
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ratione ab eaque commodi porro ad optio, quaerat ex sapiente nesciunt sed, ullam, harum laudantium et?
+            The Danakil Depression is found in the Danakil Desert,
+            along the borders of Eritrea and Djibouti.  With average temperatures of 35°C – 65°C
+            there are days when temperatures exceed 48°C – and an average annual rainfall of between 100 and 200m, 
+            it is rightly considered one of the most inhospitable places on earth. The National Geographic went so far as to call it the cruellest.
         </article>
         <p class="date">
-            march 19 2020, 3:00 am
+            posted march 19 2020, 3:00 am
         </p>
         </section>
+
+        <section>
+        <p class="title">
+            Rock-Hewn churches,Lalibela
+        </p>
+        <article>
+            The 11 medieval monolithic cave churches of this 13th-century 'New Jerusalem' are situated in a mountainous 
+            region in the heart of Ethiopia near a traditional village with circular-shaped dwellings. 
+            Lalibela is a high place of Ethiopian Christianity, still today a place of pilmigrage and devotion.
+         </article>
+        <p class="date">
+            posted march 19 2020, 5:00 am
+        </p>
+        </section>
+
+        <section>
+        <p class="title">
+            Semien Mountains National Park
+        </p>
+        <article>
+            Simien Mountains National Park is one of the national 
+            parks of Ethiopia. Located in the Semien (North) Gondar 
+            Zone of the Amhara Region, its territory covers the Semien 
+            Mountains and includes Ras Dashan, the highest point in Ethiopia. 
+            It is home to a number of endangered species, including the Ethiopian 
+            wolf and the walia ibex, a wild goat found nowhere else in the world. 
+            The gelada baboon and the caracal, a cat, also occur within the Simien 
+            Mountains. More than 50 species of birds inhabit the park, including the 
+            impressive bearded vulture, or lammergeier, with its 3 m (10 ft)) wingspan.</article>
+        <p class="date">
+            posted march 19 2020, 1:00 pm
+        </p>
+        </section>
+        <section>
+            <p class="title">
+                Tiya
+            </p>
+            <article>
+                Tiya is located in the Soddo Region of Ethiopia. 
+                It is best known for its archaeological site, a UNESCO World Heritage Site 
+                remarkable for its large stone pillars, many of which bear some form of decoration.
+                The menhir or stelae, "32 of which are engraved with enigmatic symbols, notably swords," mark a large, 
+                prehistoric burial complex. A German ethnographic expedition had visited the site in April 1935, and had found at one hour's 
+                journey to the south of the caravan camp the stone monoliths with sword symbol, which had been seen earlier by Neuville and Père Azaïs.
+            </article>
+            <p class="date">
+                posted march 19 2020, 4:00 pm
+            </p>
+        </section>
+        <section>
+            <p class="title">
+                Lake Tana
+            </p>
+            <article>
+                Lake Tana,an older variant is Tsana, sometimes called "Dembiya" after the region to the 
+                north of the lake) is the source of the Blue Nile and is the largest lake in Ethiopia.
+                Located in Amhara Region in the north-western Ethiopian Highlands, 
+                the lake is approximately 84 kilometres (52 miles) long and 66 kilometres 
+                (41 miles) wide, with a maximum depth of 15 metres (49 feet), and an elevation of 
+                1,788 metres (5,866 feet).[2] Lake Tana is fed by the Gilgel Abay, Reb and Gumara rivers.
+            </article>
+            <p class="date">
+                posted march 19 2020, 5:00 am
+            </p>
+        </section>
+
     </div>
+    <div class="breakpoint">
 
-    <div id="content">
-        <section>
-        <p class="title">
-            My third post
-        </p>
-        <article>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ratione ab eaque commodi porro ad optio, quaerat ex sapiente nesciunt sed, ullam, harum laudantium et?
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ratione ab eaque commodi porro ad optio, quaerat ex sapiente nesciunt sed, ullam, harum laudantium et?
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ratione ab eaque commodi porro ad optio, quaerat ex sapiente nesciunt sed, ullam, harum laudantium et?
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ratione ab eaque commodi porro ad optio, quaerat ex sapiente nesciunt sed, ullam, harum laudantium et?
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ratione ab eaque commodi porro ad optio, quaerat ex sapiente nesciunt sed, ullam, harum laudantium et?
-        </article>
-        <p class="date">
-            march 19 2020, 3:00 am
-        </p>
-        </section>
+    </div>
+    <h3>Developed by Dawit Teklu 2020. &copy; All rights reserved.</h3>
+    <div class="breakpoint">
+
     </div>
     
 </body>
