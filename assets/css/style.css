@@ -1,0 +1,50 @@
+body{
+    background-color: skyblue;
+    border:10px solid lightgray;
+    margin: 0;
+}
+header
+{
+background-color: rgba(119, 90, 90, 0.6);
+}
+section {
+    margin-top: 2em;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    padding: 5px 30px;
+    }
+    article {
+    text-align: justify;
+    line-height: 25px;
+    font-size: 15px;
+    }
+    .title {
+    font-size: 23px;
+    font-weight: bold;
+    }
+    .date {
+    text-transform: uppercase;
+    font-style: italic;
+    font-size: 15px; }
+
+    nav > ul > li{
+        display: inline-block;
+        padding: 10px 3px;
+        font-size: 20px;
+
+        }
+        /* removing the underline */
+        nav > ul > li > a
+        {
+        text-decoration: none;
+        }
+
+    nav > ul > li:hover{
+        background-color: #ffffff;
+    }
+    header
+{
+position: fixed;
+top: 0;
+width: 100%;
+background-color : rgba(3, 1, 1, 0.7);
+}
