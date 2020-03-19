@@ -5,34 +5,101 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="assets/images/MyImage.png">
     <title>Dawit Teklu</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+        }
+        .container{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: rgb(168, 199, 189);
+            width: 100%;
+            height: 4em;
+            top: 0;
+            position: fixed;
+            z-index: 1;
+            border-bottom: gray solid 1px;
+        }
+        .container div{
+            margin-left: 2em;
+
+        }
+        .container > div > a{
+            text-decoration: none;
+            font-size: 1.5em;
+            font-family:'Times New Roman', Times, serif;
+        }
+        .navigation_bottom_space{
+            margin-top: 80px;
+        }
+        img{
+            border-radius: 50%;
+            height: 400px;
+            width: 200px;
+        }
+        .bio{
+            position: relative;
+            border-bottom: 1px solid;
+        }
+
+        .bio-text{
+            position: absolute;
+            bottom: 5px;
+            left: 20%;
+            top: 25%;
+            width: 100%;
+            box-shadow: green 4px 6px 6px 3px ;
+            
+        }
+        @media screen and (max-width: 1050px){
+            .bio-text{
+                left: 30%;
+            }
+        }
+
+        .clear_after_bio{
+            clear: both;
+        } 
+        
+    </style>
 </head>
 <body>
+<!-- navigation start -->
+    <div class="container">
+        <div class="div1"><a href="index.html">Home</a></div>
+        <div class="div2"><a href="contact.html">Contact</a></div>
+        <div class="div3"><a href="gallery.html">Gallery</a></div>
+        <div class="div4"><a href="blog.html">Blogs</a></div>
+    </div>
 
-        <hr>
-    <a href="index.html">Home |</a>
-    <a href="contact.html">Contact |</a>
-    <a href="gallery.html">Gallery </a>
-    <a href="blog.html">Blogs </a>
-    <hr>
+<!-- navigation end -->
+    <div class="navigation_bottom_space">
 
-    <table cellpadding="10">
-        <tr>
-            <td>    <img src="assets/images/MyImage.png" alt="Dawit Teklu" width="200"></td>
-            <td>    <h1>Dawit Teklu</h1>
+    </div>
+<!-- bio start -->
+    <div class="bio">
+        <img src="assets/images/myImage.png" alt="Dawit Teklu"></td>
+   
+        <div class="bio-text">
+                <h1>Dawit Teklu</h1>
                 <h3>Student, Addis Ababa institue of Technology</h3>
-                <p>Hi there</p></td>
-        </tr>
-    </table>
+                <p>Hi there</p>
+                <p>
+                    I am  Dawit , I am student at
+                    Addis Ababa institute of technology
+                    center of informatin technology and
+                    sceintifc computing.
+                </p>
+        </div>
+    </div>
+    <div class="clear_after_bio">
 
-<hr>
+    </div>
+<!-- bio end -->
 
-    <p>
-        I am  Dawit , I am student at
-        Addis Ababa institute of technology
-        center of informatin technology and
-        sceintifc computing.
-    </p>
-<hr>
+
 <h3>Hobbies and Interests</h3>
 <ul>
     <li>
