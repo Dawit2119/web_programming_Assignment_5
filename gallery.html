@@ -6,6 +6,9 @@
     <link rel="shortcut icon" href="assets/images/MyImage.png">
     <title>Dawit Teklu</title>
     <style>
+        *{
+            box-sizing: border-box;
+        }
         body{
             margin: 0;
             padding: 0;
@@ -31,38 +34,64 @@
             font-size: 1.5em;
             font-family:'Times New Roman', Times, serif;
         }
-        .navigation_bottom_space{
+         .navigation_bottom_space{
             margin-top: 80px;
         }
-        img{
+        .bio img{
             border-radius: 50%;
             height: 400px;
             width: 200px;
         }
         .bio{
             position: relative;
-            border-bottom: 1px solid;
         }
 
         .bio-text{
             position: absolute;
             bottom: 5px;
             left: 20%;
+            right: 0;
             top: 25%;
-            width: 100%;
-            box-shadow: green 4px 6px 6px 3px ;
+            box-shadow: gray 4px 6px 6px 3px ;
             
         }
         @media screen and (max-width: 1050px){
             .bio-text{
                 left: 30%;
             }
-        }
+        } 
 
         .clear_after_bio{
             clear: both;
         } 
-        
+        .main_div >div> div >img{
+            width: 30%;
+            height: 200px;
+            float: left;
+            margin: 1.66%;
+        }
+        h3{text-align: center;color: rgb(99, 153, 156);}
+        .break_point{
+            height: 5px;
+            width: 100%;
+            margin: 30px 0;
+            border-bottom: 1px solid gray;
+        }
+        .main_div{
+            position: relative;
+            
+        }
+        .main_div::before{
+            position: absolute;
+            content: "Dawit Teklu/Gallery";
+            top: -30px;
+            left: 40%;
+            font-size: 2rem;
+            color: rgb(24, 45, 88);
+            font-family:monospace;
+            border-bottom: 1px solid gray;
+            
+        }
     </style>
 </head>
 <body>
@@ -78,13 +107,14 @@
     <div class="navigation_bottom_space">
 
     </div>
+
 <!-- bio start -->
     <div class="bio">
         <img src="assets/images/myImage.png" alt="Dawit Teklu"></td>
    
         <div class="bio-text">
                 <h1>Dawit Teklu</h1>
-                <h3>Student, Addis Ababa institue of Technology</h3>
+                <h4>Student, Addis Ababa institue of Technology</h4>
                 <p>Hi there</p>
                 <p>
                     I am  Dawit , I am student at
@@ -98,40 +128,28 @@
 
     </div>
 <!-- bio end -->
+<div class="break_point">
+        
+</div>
 
-<hr>
-    <table align="center" width="80%" border="0" cellspacing="4">
-        <tr>
-          <td colspan="3" align="center">
-              <h1 align="center">Photo Galleries</h1>
-              <p align="center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus ab minus dolores ipsam, voluptas quis illum quam nihil aut! Ull.</p>
-          </td>
-        </tr>
-        <tr>
-            <td colspan="3" height="50">
-
-            </td>
-        </tr>
-        <tr>
-            <td><img src="assets/images/1.jpg" alt="" width="300" height="200"></td>
-            <td><img src="assets/images/2.jpg" alt="" width="300" height="200"></td>
-            <td><img src="assets/images/3.jpg" alt="" width="300" height="200"></td>
-        </tr>
-        <tr>
-            <td><img src="assets/images/4.jpg" alt="" width="300" height="200"></td>
-            <td><img src="assets/images/5.jpg" alt="" width="300" height="200"></td>
-            <td><img src="assets/images/6.jpg" alt="" width="300" height="200"></td>
-        </tr>
-        <tr>
-            <td><img src="assets/images/7.jpg" alt="" width="300" height="200"></td>
-            <td><img src="assets/images/in.png" alt="" width="300" height="200"></td>
-            <td><img src="assets/images/9.jpg" alt="" width="300" height="200"></td>
-        </tr>
-        <tr>
-            <td align="center">Portfolio One</td>
-            <td align="center">Portfolio two</td>
-            <td align="center">Portfolio three</td>
-        </tr>
-    </table>
+    <div class="main_div">
+        <div id="div1">
+            <div><img src="assets/images/1.jpg" alt=""></div>
+            <div><img src="assets/images/2.jpg" alt=""></div>
+            <div><img src="assets/images/3.jpg" alt=""></div>
+        </div>
+        <div id="div1">
+            <div><img src="assets/images/4.jpg" alt=""></div>
+            <div><img src="assets/images/5.jpg" alt=""></div>
+            <div><img src="assets/images/6.jpg" alt=""></div>
+        </div>
+        <div id="div1">
+            <div><img src="assets/images/7.jpg" alt=""></div>
+            <div><img src="assets/images/9.jpg" alt=""></div>
+            <div><img src="assets/images/in.png" alt=""></div>
+        </div>        
+    </div>
+    <h3>Developed by Dawit Teklu. &copy; All rights reserved.</h3>
+    <div class="break_point"></div>
 </body>
 </html>
