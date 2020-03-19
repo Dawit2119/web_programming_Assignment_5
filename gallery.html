@@ -34,6 +34,15 @@
             font-size: 1.5em;
             font-family:'Times New Roman', Times, serif;
         }
+        a:link{
+        color: rgb(36, 133, 102);
+        }
+        a:visited{
+            color:rgb(32, 106, 131);
+        }
+        a:hover{
+            color: rgb(219, 226, 208);
+        }
          .navigation_bottom_space{
             margin-top: 80px;
         }
@@ -53,13 +62,32 @@
             right: 0;
             top: 25%;
             box-shadow: gray 4px 6px 6px 3px ;
+            border-radius: 10px;
             
         }
         @media screen and (max-width: 1050px){
             .bio-text{
                 left: 30%;
             }
-        } 
+        }
+        @media screen  and (max-width: 600px){
+            .container{
+                flex-direction: column;
+                height: 7em;
+            }
+            .bio-text{
+                left: 55%;
+                height: 400px;
+            }
+            .bio{
+                margin-top: 150px;
+                margin-bottom: 100px;
+            }
+            .main_div{
+                margin-top: 100px;
+            }
+        }
+        
 
         .clear_after_bio{
             clear: both;
@@ -149,7 +177,7 @@
             <div><img src="assets/images/in.png" alt=""></div>
         </div>        
     </div>
-    <h3>Developed by Dawit Teklu. &copy; All rights reserved.</h3>
+    <h3>Developed by Dawit Teklu 2020. &copy; All rights reserved.</h3>
     <div class="break_point"></div>
 </body>
 </html>

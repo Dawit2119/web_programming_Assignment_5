@@ -31,6 +31,15 @@
             font-size: 1.5em;
             font-family:'Times New Roman', Times, serif;
         }
+        a:link{
+        color: rgb(36, 133, 102);
+        }
+        a:visited{
+            color:rgb(32, 106, 131);
+        }
+        a:hover{
+            color: rgb(219, 226, 208);
+        }
         .navigation_bottom_space{
             margin-top: 80px;
         }
@@ -58,9 +67,17 @@
                 left: 30%;
             }
         }
-        @media screen  and(max-width: 600px){
+        @media screen  and (max-width: 600px){
             .container{
-                flex-wrap: wrap;
+                flex-direction: column;
+                height: 7em;
+            }
+            .bio-text{
+                left: 55%;
+            }
+            .bio{
+                margin-top: 150px;
+                height: 500px;
             }
         }
 
@@ -82,9 +99,6 @@
         border-radius: 15px;
         box-shadow: gray 10px 10px 10px;
     }
-    input:focus{
-        border: 2px solid rgb(61, 49, 126);
-    }
     input:invalid{
         border: 1px solid red;
     }
@@ -92,6 +106,13 @@
         border-radius: 10px;
         width: 80px;
         height: 50px;
+    }
+    input:focus{
+       background-color: rgb(221, 212, 212);
+    }
+    textarea{
+        resize: none;
+        background-color: rgb(223, 209, 209);
     }
     </style>
 </head>
@@ -464,6 +485,14 @@
                                 </tr>
                                 <tr>
                                     <td>
+                                        Comment:
+                                    </td>
+                                    <td>
+                                        <textarea name="" id="" cols="25" rows="6"></textarea>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
                                         Gender:
                                     </td>
                                     <td>
@@ -491,7 +520,7 @@
         </form>
     </div>
 <div class="break_point"> </div>
-            <h3>Developed by Dawit Teklu. &copy; All rights reserved.</h3>
+            <h3>Developed by Dawit Teklu 2020. &copy; All rights reserved.</h3>
 <div class="break_point"> </div>
 </body>
 </html>
