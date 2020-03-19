@@ -6,11 +6,12 @@
     <link rel="shortcut icon" href="assets/images/MyImage.png">
     <title>Dawit Teklu</title>
     <style>
-        body{
+        body,html{
             margin: 0;
             padding: 0;
+            width: 100%;
         }
-        .container{
+        .containerOne{
             display: flex;
             align-items: center;
             justify-content: center;
@@ -22,11 +23,11 @@
             z-index: 1;
             border-bottom: gray solid 1px;
         }
-        .container div{
+        .containerOne div{
             margin-left: 2em;
 
         }
-        .container > div > a{
+        .containerOne > div > a{
             text-decoration: none;
             font-size: 1.5em;
             font-family:'Times New Roman', Times, serif;
@@ -50,7 +51,7 @@
             left: 20%;
             top: 25%;
             width: 100%;
-            box-shadow: green 4px 6px 6px 3px ;
+            box-shadow: gray 4px 6px 6px 3px ;
             
         }
         @media screen and (max-width: 1050px){
@@ -61,13 +62,48 @@
 
         .clear_after_bio{
             clear: both;
+            height: 50px;
         } 
+        .hobbies-Header{
+        text-align: center;
         
+    }
+    div.hobbies{
+        display: flex;
+        justify-content: center;
+    
+
+    }
+    .hobbies div{
+        width: 350px;
+        padding: 19px;
+        box-shadow: rgb(204, 198, 166) 5px 7px 4px 5px ;
+
+    }h3{text-align: center;color: rgb(99, 153, 156);}
+    table{
+        margin: 20px auto;
+        width: 60%;
+        
+    }
+    table,th,td{
+        border: 1px solid grey;
+    }
+    #contact{
+        margin: 20px auto;
+        display: flex;
+        justify-content: center;
+    }
+    #contact a{text-decoration: none;margin-left: 1em;}
+    .break_point{
+        width: 100%;
+        border-bottom: gray 1px solid;
+        margin-top: 1em;
+    }
     </style>
 </head>
 <body>
 <!-- navigation start -->
-    <div class="container">
+    <div class="containerOne">
         <div class="div1"><a href="index.html">Home</a></div>
         <div class="div2"><a href="contact.html">Contact</a></div>
         <div class="div3"><a href="gallery.html">Gallery</a></div>
@@ -84,7 +120,7 @@
    
         <div class="bio-text">
                 <h1>Dawit Teklu</h1>
-                <h3>Student, Addis Ababa institue of Technology</h3>
+                <h4>Student, Addis Ababa institue of Technology</h4>
                 <p>Hi there</p>
                 <p>
                     I am  Dawit , I am student at
@@ -98,21 +134,25 @@
 
     </div>
 <!-- bio end -->
+<!-- hobbies start -->
+<h3 class="hobbies-Header">Hobbies and Interests</h3>
+<div class="hobbies">
 
-
-<h3>Hobbies and Interests</h3>
-<ul>
-    <li>
-        Sport:I Like to Watch and probably play:
+    <div class="sports">
         <ul>
-            <li>Football</li>
-            <li>VolleyBall</li>
-            <li>Ye gena chewata</li>
+            <li>
+                <strong>Sport:</strong> <br> I Like to Watch and probably play:
+                <ul>
+                    <li>Football</li>
+                    <li>VolleyBall</li>
+                    <li>Ye gena chewata</li>
+                </ul>
+            </li>
         </ul>
-
-    </li>
-    <li>
-        Books: books I have Interested more:
+    </div>
+    <div class="books">
+        <ul><li>
+        <strong>Books:</strong> <br> books I have Interested more:
         <ul>
             <li>Ethiopian Fictions:</li>
             <ul>
@@ -128,65 +168,97 @@
                 <li>University Maths</li>
             </ul>
             
+        </ul></li></ul>
+    </div>
+    <div class="foods">
+        <ul>
+            <li><strong>Foods:</strong><br>
+                I Like to eat and taste to:
+                <ul>
+                    <li>Kitfo</li>
+                    <li>Shiro</li>
+                    <li>Ayib(Cheese)</li>
+                </ul>
+            </li>
         </ul>
+    </div>
 
-    </li>
-    <li>
-        I Like to eat and taste to:
+</div>
+<div class="hobbies">
+    <div class="leaders">
         <ul>
-            <li>Kitfo</li>
-            <li>Shiro</li>
-            <li>Ayib(Cheese)</li>
+            <li><strong>Leaders:</strong><br>
+                The Leaders most of the time adimred me:
+                <ul>
+                    <li>Tewodross II</li>
+                    <li>Menelik II</li>
+                    <li>Nelson Mandella</li>
+                </ul>
+            </li>
         </ul>
-    </li>
-    <li>
-        The Leaders most of the time adimred me:
+    </div>
+    <div class="teachers">
         <ul>
-            <li>Tewodross II</li>
-            <li>Menelik II</li>
-            <li>Nelson Mandella</li>
+            <li>
+                <strong>Teachers</strong>: <br>
+                I have respect for all of my teachers,but 
+                in my road of study I have great respect and gratitude for:
+                <ul>
+                    <li>Mr. Yoseph Abate</li>
+                    <li>Mr. Fitsum Alemu</li>
+                    <li>Sisay Bekele(my H.S teacher)</li>
+                </ul>
+            </li>
         </ul>
-    </li>
-    <li>
-        Teachers: 
-        I have respect for all of my teachers,but 
-        in my road of study I have great respect and gratitued for:
+    </div>
+    <div class="sceintists">
         <ul>
-            <li>Mr. Yoseph Abate</li>
-            <li>Mr. Fitsum Alemu</li>
-            <li>Sisay Bekele(my H.S teacher)</li>
+            <li>
+                <strong>Sceintists</strong>: <br> Scientists should be praised                                    Scientists should be praised <br>
+                by anyone, but the following
+                ones are best for me:
+                <ul>
+                    <li>Eng.Kitaw Ejigu</li>
+                    <li>Tomas Edison</li>
+                    <li>Einstein</li>
+                </ul>
+            </li>
         </ul>
-    </li>
-    <li>
-        Sceintists: Scientists should be praised                                    Scientists should be praised <br>
-        by anyone, but the following
-        ones are best for me:
-        <ul>
-            <li>Eng.Kitaw Ejigu</li>
-            <li>Tomas Edison</li>
-            <li>Einstein</li>
-        </ul>
-    </li>
-</ul>
-<hr>
-<h3>Work EXperince</h3>
+    </div>
+</div>
+<div class="break_point"> </div>
+<!-- hobbies end -->
+<div class="break_poi">
+
+</div>
+<!-- work experienc start -->
+<h3 id="work-experice">Work Experience</h3>
+
+<div class="work_exp">
+    <div class="work_exp_head">
+
+    </div>
+    <div></div>
+</div>
 <table>
     <tr>
         <th>Date</th>
         <th>Job title</th>
     </tr>
     <tr>
-        <td>september 2018</td>
+        <td>September 2018</td>
         <td>front-end devleoper</td>
     </tr>
     <tr>
-        <td>march 2020</td>
-        <td>mobile programmera</td>
+        <td>March 2020</td>
+        <td>mobile programmer</td>
     </tr>
 </table>
-<hr>
+<!-- work experince end -->
+<div class="break_point"> </div>
+<!-- sills start -->
 <h3>Skills</h3>
-<table cellspacing="10">
+<table>
     <tr>
         <th>Title</th>
         <th>Skill</th>
@@ -201,12 +273,19 @@
     </tr>
 
 </table>
-<hr>
+<!-- skills end -->
+<!-- contact me start -->
+<div class="break_point"> </div>
+<div id="contact">
 <a href="https://wwww.facebook.com/dawit_teklu">Facebook</a>
 <a href="https://t.me/dawit_te">Telegram</a>
 <a href="https://www.instagram.com/dawit2070">Instagram</a>
-<hr>
-
+</div>
+<!-- contact me end -->
+<div class="break_point"> </div>
+<!-- footer start -->
 <h3>Developed by Dawit Teklu. &copy; All rights reserved.</h3>
+<!-- footer en -->
+<div class="break_point"></div>
 </body>
 </html>
